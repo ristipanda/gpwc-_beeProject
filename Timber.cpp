@@ -34,7 +34,7 @@ int main()
 	Texture textureBackground;
 
 	// Load a graphic into the texture
-	textureBackground.loadFromFile("/home/student/c++_2241016101/2241016101/Project1/graphics/background.png");
+	textureBackground.loadFromFile("background.png");
 
 	// Create a sprite
 	Sprite spriteBackground;
@@ -47,14 +47,14 @@ int main()
 
 	// Make a tree sprite
 	Texture textureTree;
-	textureTree.loadFromFile("/home/student/c++_2241016101/2241016101/Project1/graphics/tree.png");
+	textureTree.loadFromFile("tree.png");
 	Sprite spriteTree;
 	spriteTree.setTexture(textureTree);
 	spriteTree.setPosition(810, 0);
 
 	// Prepare the bee
 	Texture textureBee;
-	textureBee.loadFromFile("/home/student/c++_2241016101/2241016101/Project1/graphics/bee.png");
+	textureBee.loadFromFile("bee.png");
 	Sprite spriteBee;
 	spriteBee.setTexture(textureBee);
 	spriteBee.setPosition(0, 800);
@@ -66,7 +66,7 @@ int main()
 	float beeSpeed = 0.0f;
 	
 	SoundBuffer chopBuffer;
-	chopBuffer.loadFromFile("/home/student/c++_2241016101/2241016101/Project1/sound/chop.wav");
+	chopBuffer.loadFromFile("chop.wav");
 	Sound chop;
 	chop.setBuffer(chopBuffer);
 	chop.setVolume(50);
@@ -74,7 +74,7 @@ int main()
 	chop.play();
 
 	SoundBuffer deathBuffer;
-	deathBuffer.loadFromFile("/home/student/c++_2241016101/2241016101/Project1/sound/death.wav");
+	deathBuffer.loadFromFile("death.wav");
 	Sound death;
 	death.setBuffer(deathBuffer);
 	death.setVolume(50);
@@ -82,7 +82,7 @@ int main()
 	death.play();
 
 	SoundBuffer ootBuffer;
-	ootBuffer.loadFromFile("/home/student/c++_2241016101/2241016101/Project1/sound/out_of_time.wav");
+	ootBuffer.loadFromFile("out_of_time.wav");
 	Sound oot;
 	oot.setBuffer(ootBuffer);
 	oot.setVolume(50);
@@ -90,7 +90,7 @@ int main()
 	oot.play();
 
 	Texture texturePlayer;
-	texturePlayer.loadFromFile("/home/student/c++_2241016101/2241016101/Project1/graphics/player.png");
+	texturePlayer.loadFromFile("player.png");
 	Sprite spritePlayer;
 	spritePlayer.setTexture(texturePlayer);
 	spritePlayer.setPosition(580,720);
@@ -104,14 +104,14 @@ int main()
 
 	//add gravestone
 	Texture textureRIP;
-	textureRIP.loadFromFile("/home/student/c++_2241016101/2241016101/Project1/graphics/rip.png");
+	textureRIP.loadFromFile("rip.png");
 	Sprite spriteRIP;
 	spriteRIP.setTexture(textureRIP);
 	spriteRIP.setPosition(600,860);
 
 	//add axe
 	Texture textureAxe;
-	textureAxe.loadFromFile("/home/student/c++_2241016101/2241016101/Project1/graphics/axe.png");
+	textureAxe.loadFromFile("axe.png");
 	Sprite spriteAxe;
 	spriteAxe.setTexture(textureAxe);
 	spriteAxe.setPosition(700,830);
@@ -122,7 +122,7 @@ int main()
 
 	//add log
 	Texture textureLog;
-	textureLog.loadFromFile("/home/student/c++_2241016101/2241016101/Project1/graphics/log.png");
+	textureLog.loadFromFile("log.png");
 	Sprite spriteLog;
 	spriteLog.setTexture(textureLog);
 	spriteLog.setPosition(810,720);
@@ -136,7 +136,7 @@ int main()
 	Texture textureCloud;
 
 	// Load 1 new texture
-	textureCloud.loadFromFile("/home/student/c++_2241016101/2241016101/Project1/graphics/cloud.png");
+	textureCloud.loadFromFile("cloud.png");
 
 	// 3 New sprites withe the same texture
 	Sprite spriteCloud1;
@@ -181,7 +181,7 @@ int main()
 	sf::Text scoreText;
 	sf::Text messageText;
 	sf::Font font;
-	font.loadFromFile("/home/student/c++_2241016101/2241016101/Project1/fonts/KOMIKAP_.ttf");
+	font.loadFromFile("/fonts/KOMIKAP_.ttf");
 	
 	//set the font to the msg
 	scoreText.setFont(font);
